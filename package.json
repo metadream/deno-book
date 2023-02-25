@@ -1,0 +1,25 @@
+{
+  "name": "docin",
+  "version": "0.0.2",
+  "description": "A super easy-to-use markdown document preview framework.",
+  "license": "MIT",
+  "author": "Ai Chen",
+  "homepage": "https://github.com/metadream",
+  "repository": "https://github.com/metadream/docin.git",
+  "main": "app.js",
+  "bin": {
+    "docin": "bin/docin"
+  },
+  "dependencies": {
+    "marked": "^4.2.12",
+    "nedos": "^0.0.2"
+  },
+  "keywords": [
+    "docs",
+    "document",
+    "jsdoc",
+    "node-doc",
+    "markdown",
+    "generator"
+  ]
+}

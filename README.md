@@ -2,11 +2,11 @@
 
 A super easy-to-use markdown document preview framework in Deno.
 
-1. Create a startup file with any name (ex. `startup.ts`) in your document
-   folder root. The content of the file is as follows:
+1. Create a start file with any name (ex. `start.ts`) in your document folder
+   root. The content of the file is as follows:
 
 ```
-// startup.ts
+// start.ts
 import "https://esm.sh/docsee/mod.ts";
 ```
 
@@ -36,10 +36,21 @@ footer: Copyright (c) 2023
 - [Methods](/folder2/methods.md)
 ```
 
-3. Create markdown files with corresponding names under folder1 and folder2.
+3. Create markdown files with corresponding names under folder1 and folder2. The
+   final directory structure is as follows:
+   ```
+   ├─ folder1
+   │   └─ installation.md
+   ├─ folder2
+   │   ├─ properties.md
+   │   └─ methods.md
+   ├─ README.md
+   ├─ SUMMARY.md
+   └─ start.ts
+   ```
 
-4. Run startup file.
+4. Run start file.
 
 ```
-deno run --allow-net --allow-read startup.ts
+deno run --allow-net --allow-read start.ts
 ```

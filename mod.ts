@@ -17,7 +17,6 @@ const tmpl = `
   main { flex: 1; padding: 5%; overflow: auto; }
   h1 { color: #00ad5d; }
   h2 { color:#4688f4; }
-  h3 { font-size: 15px; }
   hr { border: none; height: 1px; margin: 20px 0 10px; background: #eee; }
   ul, ol { padding-left: 20px; }
   img { display: block; max-width: 100%; }
@@ -36,6 +35,7 @@ const tmpl = `
   aside li { margin: 5px 0; }
   aside h1 { font-size: 18px; }
   aside h2 { font-size: 16px; margin: 20px 0 10px; }
+  aside h3 { font-size: 15px; }
   footer { font-size: 13px; color: #999; text-align: center; margin-bottom: -10px; }
   .logo { display: flex; justify-content: center; align-items: center; }
   .logo img { width: 64px; height: 64px; }

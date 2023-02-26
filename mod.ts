@@ -22,6 +22,7 @@ const tmpl = `
   img { display: block; max-width: 100%; }
   a { color:#666; text-decoration: none; }
   a:hover { color:#333; text-decoration: underline; }
+  a.actived { color: #333; font-weight:700; }
   p:first-child, h1:first-child, h2:first-child { margin-top: 0; }
   p:last-child { margin-bottom: 0; }
   pre { padding: 15px; background: #f6f6f6; border-radius: 5px; overflow-x: auto; }
@@ -48,6 +49,12 @@ const tmpl = `
 <main>{{= content }}</main>
 </body>
 </html>
+
+<script>
+const link = document.querySelector("aside a[href='"+location.pathname+"']");
+link.className = "actived";
+link.scrollIntoView({ block: "center" });
+</script>
 `;
 
 Denos

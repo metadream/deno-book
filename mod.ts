@@ -25,10 +25,16 @@ const tmpl = `
   a.actived { color: #333; font-weight:700; }
   p:first-child, h1:first-child, h2:first-child { margin-top: 0; }
   p:last-child { margin-bottom: 0; }
-  pre { padding: 15px; background: #f6f6f6; border-radius: 5px; overflow-x: auto; }
+  code { font-family: 'JetBrains Mono'; font-size: 14px; background: #f6f6f6; margin: 0 3px; padding: 3px 6px; border-radius: 3px; }
+  pre { padding: 15px 20px; background: #f6f6f6; border-radius: 5px; overflow-x: auto; }
+  pre code { margin: 0; padding: 0; }
   pre::-webkit-scrollbar { height: 5px; }
   pre::-webkit-scrollbar-thumb { background: #ddd; }
-  code { font-family: 'JetBrains Mono'; font-size: 14px; }
+  blockquote { border-left: #eee 4px solid; padding-left: 15px; margin: 0; color: #999; }
+  table { width: 100%; border-collapse: collapse; border: #eee 1px solid; }
+  table thead { background: #f6f6f6; }
+  table tr { border-top: #eee 1px solid; }
+  table th, table td { padding: 5px 10px; border-left: #eee 1px solid; }
   aside { width: 300px; height: 100%; padding: 20px; background: #fff; border-right: #ddd 1px solid; overflow: auto; }
   aside::-webkit-scrollbar { width: 5px; }
   aside::-webkit-scrollbar-thumb { background: #eee; }

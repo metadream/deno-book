@@ -57,9 +57,11 @@ const tmpl = `
 </html>
 
 <script>
-const link = document.querySelector("aside a[href='"+location.pathname+"']");
-link.className = "actived";
-link.scrollIntoView({ block: "center" });
+if (location.pathname != "/") {
+  const link = document.querySelector("aside a[href='" + location.pathname + "']");
+  link.className = "actived";
+  link.scrollIntoView({ block: "center" });
+}
 </script>
 `;
 

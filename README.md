@@ -1,4 +1,4 @@
--# Docsee
+# Docsee
 
 A super easy-to-use markdown document preview framework in Deno.
 

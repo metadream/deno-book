@@ -1,6 +1,6 @@
 {
   "name": "docsee",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A super easy-to-use markdown document preview framework in Deno.",
   "license": "MIT",
   "author": "Ai Chen",

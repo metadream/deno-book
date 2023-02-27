@@ -20,8 +20,8 @@ import "https://deno.land/x/book/mod.ts";
    contents of the summary will be rendered in the left navigation side of the
    page, and README file will be used as homepage content.
 
-   A typical `SUMMARY.md` contains the following. Among them, metadata between
-   `---` and first-level title are not required.
+   A typical `SUMMARY.md` contains the following content. Among them, metadata
+   between `---` and first-level title are not required.
 
 ```
 ---

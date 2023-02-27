@@ -8,10 +8,9 @@ console.log("url==========", url);
 const __dirname = dirname(url);
 console.log("__dirname==========", __dirname);
 
+const a = Deno.readTextFileSync(__dirname + "/tmpl.html");
 
-
-console.log("Deno.mainModule-----", Deno.mainModule);
-console.log("Deno.cwd()-----", Deno.cwd());
+console.log(a);
 
 
 const tmpl = `

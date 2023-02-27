@@ -8,6 +8,12 @@ console.log("url==========", url);
 const __dirname = dirname(url);
 console.log("__dirname==========", __dirname);
 
+
+
+console.log("Deno.mainModule-----", Deno.mainModule);
+console.log("Deno.cwd()-----", Deno.cwd());
+
+
 const tmpl = `
 <!DOCTYPE html>
 <html>

@@ -1,6 +1,13 @@
 import { Denos } from "./deps.ts";
 import { meta, getDocument, getSummary, getReadme } from "./docs.ts";
 
+import { dirname } from "https://deno.land/std@0.177.0/path/mod.ts";
+
+const url = import.meta.url.replace(/^file:\/\//, "");
+console.log("url==========", url);
+const __dirname = dirname(url);
+console.log("__dirname==========", __dirname);
+
 const tmpl = `
 <!DOCTYPE html>
 <html>
@@ -66,14 +73,14 @@ if (location.pathname != "/") {
 `;
 
 Denos
-    .get("/", async ctx => {
-        const summary = await getSummary();
-        const content = await getReadme();
-        return ctx.render(tmpl, { meta, summary, content });
-    })
-    .get("/*", async ctx => {
-        const summary = await getSummary();
-        const content = await getDocument(ctx.path);
-        return ctx.render(tmpl, { meta, summary, content });
-    })
-    .listen();
+  .get("/", async ctx => {
+    const summary = await getSummary();
+    const content = await getReadme();
+    return ctx.render(tmpl, { meta, summary, content });
+  })
+  .get("/*", async ctx => {
+    const summary = await getSummary();
+    const content = await getDocument(ctx.path);
+    return ctx.render(tmpl, { meta, summary, content });
+  })
+  .listen();

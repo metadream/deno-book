@@ -13,7 +13,7 @@ https://docs.zerg.cc
 
 ```
 // start.ts
-import "https://esm.sh/docsee/mod.ts";
+import "https://deno.land/x/docsee/mod.ts";
 ```
 
 2. Create `SUMMARY.md` and `README.md` in your document folder root. The

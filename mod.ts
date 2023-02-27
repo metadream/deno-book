@@ -1,8 +1,8 @@
-import { Denos } from "./deps.ts";
+import { core } from "./deps.ts";
 import { tmpl } from "./tmpl.ts";
 import { meta, getDocument, getSummary, getReadme } from "./docs.ts";
 
-Denos
+core
     .get("/", async ctx => {
         const summary = await getSummary();
         const content = await getReadme();

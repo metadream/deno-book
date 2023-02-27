@@ -1,4 +1,4 @@
-# Docsee
+# Deno-Book
 
 A super easy-to-use markdown document preview framework in Deno.
 
@@ -13,7 +13,7 @@ https://docs.zerg.cc
 
 ```
 // start.ts
-import "https://deno.land/x/docsee/mod.ts";
+import "https://deno.land/x/book/mod.ts";
 ```
 
 2. Create `SUMMARY.md` and `README.md` in your document folder root. The

@@ -10,7 +10,7 @@ core
     })
     .get("/*", async ctx => {
         const summary = await getSummary();
-        const content = await getDocument(ctx.path);
+        const content = await getDocument(decodeURIComponent(ctx.path));
         return ctx.render(tmpl, { meta, summary, content });
     })
     .listen();

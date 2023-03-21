@@ -1,8 +1,19 @@
-import { resolve, Marked } from "./deps.ts";
+import { resolve, marked, parseYaml } from "./deps.ts";
 
 const cache = new Map();
 const SUMMARY = "SUMMARY.md";
 const README = "README.md";
+
+function parse(text: string) {
+    const match = text.match(/^\s*---([\s\S]*)---/);
+    let meta = null;
+    if (match) {
+        meta = parseYaml(match[1]);
+        text = text.replace(match[0], "");
+    }
+    const content = marked.parse(text);
+    return { meta, content };
+}
 
 export const meta = {
     name: "Deno Book", title: "",
@@ -16,7 +27,7 @@ export const getDocument = async function (path: string) {
     if (!cache.get(path)) {
         try {
             const text = await Deno.readTextFile(resolve(path));
-            const markup = Marked.parse(text);
+            const markup = parse(text);
             cache.set(path, markup.content);
 
             if (path == SUMMARY) {

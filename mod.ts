@@ -1,8 +1,8 @@
-import { core } from "./deps.ts";
+import app from "./deps.ts";
 import { tmpl } from "./tmpl.ts";
 import { meta, getDocument, getSummary, getReadme } from "./docs.ts";
 
-core
+app
     .get("/", async ctx => {
         const summary = await getSummary();
         const content = await getReadme();

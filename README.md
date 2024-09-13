@@ -4,7 +4,7 @@ A super easy-to-use markdown document preview framework in Deno.
 
 ## Demo
 
-https://docs.zerg.cc
+https://docs.arraywork.com
 
 ## Usage
 

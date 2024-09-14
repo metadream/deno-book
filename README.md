@@ -4,7 +4,7 @@ A super easy-to-use markdown document preview framework in Deno.
 
 ## Demo
 
-https://docs.arraywork.com
+https://tech-docs.deno.dev
 
 ## Usage
 
